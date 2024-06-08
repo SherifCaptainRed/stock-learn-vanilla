@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn</title>
+
+  <link rel="stylesheet" href="../styleIndex.css">
+  <link rel="stylesheet" href="../page-css/explore-learn.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="../app.js"></script>
+  <script defer src="../page-js/explore-learn.js"></script>
+</head>
+
+<body class="light">
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="../index.html">Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#learn">Learn</a>
+      </li> -->
+
+      <!-- Dropdown -->
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Theme</a>
+        <ul class="dropdown">
+          <li class="dropdown-item">
+            <a id="light" href="#">light</a>
+          </li>
+          <li class="dropdown-item">
+            <a id="dark" href="#">dark</a>
+          </li>
+          <li class="dropdown-item">
+            <a id="solar" href="#">solarize</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- <li class="nav-item">
+        <a href="#contact">Contact Us</a>
+      </li> -->
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Search Box  Section-->
+    <!-- <div class="sidebar-container">
+      <div class="sidebar">
+        hi
+      </div>
+      <div class="data">
+        bye
+      </div>
+    </div> -->
+    <div class="search-wrapper">
+      <h1>All Courses</h1>
+      <input type="text" name="" id="find" placeholder="Search Here..." onkeyup="search()">
+    </div>
+    <hr>
+    <!-- Contents Section -->
+    <div class="course-cards">
+
+      <div class="card" id="course1">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal1">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" id="course2">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>Ansh</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal2">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" id="course3">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>dhola mama</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal3">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" id="course4">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>stock</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal4">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" id="course5">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>raju</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal5">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" id="course6">
+        <div class="course-youTube-vid-thumbnail">
+          <img class="course-thumbnail" src="http://img.youtube.com/vi/442eg9O0rJg/mqdefault.jpg" alt="thumbail">
+        </div>
+        <div class="course-body">
+          <h3>dk</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores!</p>
+        </div>
+        <div class="course-button">
+          <button class="course-button" data-modal-target="#modal6">Read More</button>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+  </main>
+
+  <!-- Modal Section -->
+  <div class="modal" id="modal1">
+    <!-- Modal content here -->
+    <div class="modal-content">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/442eg9O0rJg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <h3>Name</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+  </div>
+  <div class="modal" id="modal2">
+    <!-- Modal content here -->
+    <div class="modal-content">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/442eg9O0rJg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <h3>Name</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+  </div>
+  <div class="modal" id="modal3">
+    <!-- Modal content here -->
+    <div class="modal-content">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/442eg9O0rJg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <h3>Name</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+  </div>
+  <div class="modal" id="modal4">
+    <!-- Modal content here -->
+    <div class="modal-content">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/442eg9O0rJg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <h3>Name</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae aut ducimus neque iusto non
+        voluptatibus, dolores praesentium. Cum similique quaerat est voluptatem sequi nihil obcaecati eos! Quo rerum
+        aliquam pariatur laudantium aperiam natus dolores temporibus nihil fuga, corporis placeat velit corrupti
+        provident
+        ut? Dolores quibusdam aliquam iusto. Atque consectetur delectus voluptates reiciendis unde laborum quia vitae,
+        et
+        earum consequuntur vel officiis ab laudantium animi labore incidunt aliquid dicta autem! Voluptas, magnam et quo
+        nisi mollitia vero, sunt exercitationem ea eaque eligendi placeat? Iusto vitae asperiores possimus blanditiis
+        facilis, quas porro rem. Vero quos rem delectus nam vitae dolor consequuntur.
+      </p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+  </div>
+
+  <div id="backdrop"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Stack learning website &copy; 2024 <span>Dhola Mama</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock-APP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleIndex.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="app.js"></script>
+</head>
+
+<body class="light">
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#learn">Learn</a>
+      </li>
+
+      <!-- Dropdown -->
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Theme</a>
+        <ul class="dropdown">
+          <li class="dropdown-item">
+            <a id="light" href="#">light</a>
+          </li>
+          <li class="dropdown-item">
+            <a id="dark" href="#">dark</a>
+          </li>
+          <li class="dropdown-item">
+            <a id="solar" href="#">solarize</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a href="#contact">Contact Us</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a href="#login">Login</a>
+      </li> -->
+    </ul>
+    <!-- <ul>
+      <li>
+        <span>F</span>
+      </li>
+      <li>
+        <span>T</span>
+      </li>
+      <li>
+        <span>Y</span>
+      </li>
+    </ul> -->
+  </nav>
+
+  <header>
+    <img src="img/logo.png" class="logo" />
+    <h1>Stock App Platform,<br />Let's learn</h1>
+
+    <p>Learn, Grow, Earn</p>
+  </header>
+
+  <main>
+    <hr>
+    <br>
+    <!-- About Section -->
+    <div class="about" id="about">
+      <h2>About</h2>
+      <div class="about-container">
+        <div class="text hover-card">
+          <h3>Stock learning</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime recusandae numquam porro nisi. Magnam, est
+            illo cumque temporibus nihil inventore aut. Assumenda dolorum repudiandae reiciendis tempore, ea velit quam
+            quisquam provident amet. Reprehenderit repellat ducimus est quo deleniti nam veritatis voluptate in?
+            Sapiente
+            laudantium enim quam exercitationem maxime quos quod?
+          </p>
+          <p>Also</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime recusandae numquam porro nisi. Magnam,
+            est
+            illo cumque temporibus nihil inventore aut. Assumenda dolorum repudiandae reiciendis tempore, ea velit
+            quam
+            quisquam provident amet. Reprehenderit repellat ducimus est quo deleniti nam veritatis voluptate in?
+            Sapiente
+            laudantium enim quam exercitationem maxime quos quod?
+          </p>
+        </div>
+        <div class="img-stock hover-card">
+          <img src="img/bg.jpg" alt="reandom image">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, perferendis!</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!-- Learn Section -->
+    <div class="learn" id="learn">
+      <h2>Let's Learn</h2>
+      <div class="learn-container">
+        <div class="text hover-card-learn">
+          <h3>Explore</h3>
+          <p>See all topics and pick one</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae fugit sapiente harum, a quod itaque,
+            alias reprehenderit nesciunt id ut explicabo perferendis. Velit accusamus quam eaque impedit nobis est
+            numquam, at unde saepe! Laborum debitis recusandae voluptatem, neque excepturi architecto voluptatibus
+            nesciunt, praesentium perspiciatis ipsam maxime. Suscipit eius necessitatibus dolor?</p>
+          <button class="explore-button">
+            <a href="/page-HTML/explore-learn.html" target="_blank">Click</a>
+          </button>
+        </div>
+        <!-- <div class="img-stock hover-card">
+          <h3>Watch the Introductory video</h3>
+          <img src="img/bg.jpg" alt="reandom image">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, perferendis!</p>
+          <button class="explore-button">
+            <a href="">ReadMore</a>
+          </button>
+        </div> -->
+        <div class="img-stock hover-card-learn">
+          <h3>Watch the Introductory video</h3>
+          <img src="img/bg.jpg" alt="random image">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, perferendis!</p>
+          <button class="explore-button" id="myBtn">Read More</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!-- Contact Us Section -->
+    <div class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="hover-card-contact">
+        <h3>let's get in Touch</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias esse error, recusandae iure
+          reprehenderit. Saepe alias nulla nesciunt similique!
+        </p>
+        <div class="contact-icon">
+          <ul>
+            <li><i class='fa fa-phone'></i> anshtrips007@gmail.com</li>
+            <li><i class='fa fa-envelope'></i> +91 6351143604</li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </main>
+
+  <hr>
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Stack learning website &copy; 2024 <span>Dhola Mama</span></p>
+    </div>
+  </footer>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe class="youtube-video" src="https://www.youtube.com/embed/442eg9O0rJg?autoplay=1"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p>Information about the video...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aspernatur dolorem sed ab, cupiditate, illo
+        laudantium omnis quam earum a quia quo deleniti ad ea debitis quibusdam temporibus officia rerum pariatur,
+        labore vitae. Temporibus eum assumenda nobis perferendis architecto porro ab veniam, sit placeat quia adipisci
+        saepe? Fugit veritatis ex asperiores nemo tempore, labore totam autem id, aspernatur enim reprehenderit qui
+        maxime rem odio voluptas. Explicabo molestiae, recusandae enim facere tempora sapiente distinctio, voluptatum,
+        voluptatem voluptas sint esse quas perferendis animi. Laborum quasi omnis maxime ratione iure in at rem nesciunt
+        fugiat laudantium. Magnam aperiam in rerum cum soluta iste.</p>
+      <p>Information about the video...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aspernatur dolorem sed ab, cupiditate, illo
+        laudantium omnis quam earum a quia quo deleniti ad ea debitis quibusdam temporibus officia rerum pariatur,
+        labore vitae. Temporibus eum assumenda nobis perferendis architecto porro ab veniam, sit placeat quia adipisci
+        saepe? Fugit veritatis ex asperiores nemo tempore, labore totam autem id, aspernatur enim reprehenderit qui
+        maxime rem odio voluptas. Explicabo molestiae, recusandae enim facere tempora sapiente distinctio, voluptatum,
+        voluptatem voluptas sint esse quas perferendis animi. Laborum quasi omnis maxime ratione iure in at rem nesciunt
+        fugiat laudantium. Magnam aperiam in rerum cum soluta iste.</p>
+    </div>
+  </div>
+
+  <!-- <section class="section-top">
+    <div class="content rellax" data-rellax-speed="5">
+      <h1>Stock learning Website</h1>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="section-stream">
+    <img src="./img/play.jpg" alt="" class="play rellax" data-rellax-speed="-1" data-rellax-xs-speed="-1">
+
+    <div class="content rellax" data-rellax-speed="7">
+      <div>
+        <h2 class="secondary-text">Learn Everything</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorem provident est id voluptatum odio
+          neque ut nam, a obcaecati quo quam dolor corporis enim. Cum vel ea in non.</p>
+      </div>
+      <div>
+        <h2 class="secondary-text">Stock</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorem provident est id voluptatum odio
+          neque ut nam, a obcaecati quo quam dolor corporis enim. Cum vel ea in non.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-grid">
+    <div class="rellax" data-rellax-speed="2" data-rellax-xs-speed="2">
+      <i class="fas fa-video fa-3x secondary-text"></i>
+      <h2>Watch <span class="secondary-text dot">.</span></h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque aperiam error assumenda animi minima repellat
+        nam voluptatibus nostrum blanditiis eum qui, adipisci pariatur, quod at, necessitatibus sint. Exercitationem,
+        numquam sit.</p>
+    </div>
+    <div class="rellax" data-rellax-speed="5" data-rellax-xs-speed="2">
+      <i class="fas fa-user fa-3x secondary-text"></i>
+      <h2>Share <span class="secondary-text dot">.</span></h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque aperiam error assumenda animi minima repellat
+        nam voluptatibus nostrum blanditiis eum qui, adipisci pariatur, quod at, necessitatibus sint. Exercitationem,
+        numquam sit.</p>
+    </div>
+    <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="2">
+      <i class="fas fa-book fa-3x secondary-text"></i>
+      <h2>Learn <span class="secondary-text dot">.</span></h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque aperiam error assumenda animi minima repellat
+        nam voluptatibus nostrum blanditiis eum qui, adipisci pariatur, quod at, necessitatibus sint. Exercitationem,
+        numquam sit.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <ul>
+      <li><a href="#">Faq</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">Privacy Notice</a></li>
+      <li><a href="#">Contact US</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+    integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    let rellax = new Rellax('.rellax');
+  </script> -->
+</body>
+
+</html>
